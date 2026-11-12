@@ -1,9 +1,9 @@
 # Circuit Analysis — 5 V DC Supply Lab
 
-[![Lab archive](https://img.shields.io/badge/type-hardware%20lab%20archive-0f6b7a)](https://github.com/rohaan2802/Circuit-Analysis)
+[![Lab archive](https://img.shields.io/badge/type-hardware%20lab%20archive-0f6b7a)](https://github.com/rohaan2802/Circuit_Analysis)
 [![Regulator](https://img.shields.io/badge/regulator-LM7805-064e57)](docs/pinouts.md)
 [![Result](https://img.shields.io/badge/measured-5.06%20V-1b7a4b)](#measured-result)
-[![Screenshots](https://img.shields.io/badge/screenshots-20%20labelled-33691e)](#feature-screenshots)
+[![Screenshots](https://img.shields.io/badge/screenshots-20%20labelled-33691e)](#feature-screenshots-20)
 
 Hardware lab archive for a **regulated 5 V DC power supply**:
 
@@ -15,34 +15,33 @@ Includes the graded **20-slide PDF**, breadboard photos, **two live videos**, **
 
 ---
 
-## Live demo
+<a id="live-demo"></a>
 
-Primary live capture (breadboard power-on / measurement moment):
+## Live Links
 
-https://github.com/rohaan2802/Circuit-Analysis/blob/main/video_20221205_163544.mp4
-
-Secondary live capture:
-
-https://github.com/rohaan2802/Circuit-Analysis/blob/main/video_20221205_163700.mp4
-
-Full graded presentation (PDF):
-
-https://github.com/rohaan2802/Circuit-Analysis/blob/main/5%20VOLT%20DC%20SUPPLY.pdf
-
-Hardware still (5 Dec 2022):
-
-https://github.com/rohaan2802/Circuit-Analysis/blob/main/IMG_20221205_163654.jpg
-
-Secondary hardware angle (7 Dec 2022):
-
-https://github.com/rohaan2802/Circuit-Analysis/blob/main/IMG-20221207-WA0006.jpeg
+| What | Link |
+|---|---|
+| Website | [Open website](https://rohaan2802.github.io/Circuit_Analysis/) |
+| Repository | [https://github.com/rohaan2802/Circuit_Analysis](https://github.com/rohaan2802/Circuit_Analysis) |
+| Lab presentation | [Open lab presentation](https://github.com/rohaan2802/Circuit_Analysis/blob/main/5%20VOLT%20DC%20SUPPLY.pdf) |
 
 ---
+
+## Project Summary
+
+| Item | Lab record |
+|---|---|
+| Objective | Convert AC to a nominal 5 V DC supply and check the output on a breadboard prototype |
+| Topology | Step-down transformer, four-diode bridge, filter capacitor and LM7805 regulator |
+| Load | 1 kΩ as documented in the presentation, with an LED indicator |
+| Measured output | **5.06 V DC**, or **+0.06 V (+1.2%)** relative to the nominal output |
+| Evidence | [Proteus capture](docs/screenshots/13-proteus-simulation.jpg), [hardware photo](docs/screenshots/14-hardware-breadboard-upright.png), [result slide](docs/screenshots/15-measured-result-5v06.jpg) and two recordings |
+| Scope of testing | One documented measurement across the load |
 
 ## Table of contents
 
 1. [What this archive is](#what-this-archive-is)
-2. [Live demo](#live-demo)
+2. [Live Links](#live-links)
 3. [Quick start](#quick-start)
 4. [Extra lab features (rebuild pack)](#extra-lab-features-rebuild-pack)
 5. [Feature screenshots (20)](#feature-screenshots-20)
@@ -82,7 +81,7 @@ This repository is a **documentation + evidence + rebuild** pack: theory slides,
 
 ## Quick start
 
-1. Open a [Live demo](#live-demo) MP4 URL (full link shown above).
+1. Watch the [hardware recordings](#hardware-media).
 2. Skim [Feature screenshots (20)](#feature-screenshots-20) for every stage visually.
 3. Read `5 VOLT DC SUPPLY.pdf` for the graded narrative.
 4. If rebuilding in a supervised lab: follow [`docs/rebuild-checklist.md`](docs/rebuild-checklist.md) → [`docs/wiring-checklist.md`](docs/wiring-checklist.md) → log in [`docs/measurement-log.md`](docs/measurement-log.md).
@@ -91,7 +90,7 @@ This repository is a **documentation + evidence + rebuild** pack: theory slides,
 
 ## Extra lab features (rebuild pack)
 
-These are **project-relevant extras** added to groom the archive beyond the original PDF dump:
+Use these files to review the parts, pinouts, measurements and lab notes.
 
 | Feature | File | Why it exists |
 |---------|------|----------------|
@@ -167,7 +166,9 @@ Twenty labelled captures. Earlier gallery embeds were removed; this set is the c
 
 ### 14. Hardware breadboard (photo)
 
-![Hardware breadboard](docs/screenshots/14-hardware-breadboard.jpg)
+<img src="docs/screenshots/14-hardware-breadboard-upright.png" alt="Upright view of the breadboard and multimeter displaying 5.06 V" width="400">
+
+[Original photo](docs/screenshots/14-hardware-breadboard.jpg)
 
 ### 15. Measured result — 5.06 V
 
@@ -366,7 +367,9 @@ Teaching steps (p. 14–17): step down → rectify → filter → regulate. Pref
 
 > When checking with the DMM (Digital Multimeter), the voltage across the load resistance is almost near the 5 volt but the DMM shows **5.06 V**.
 
-Conclusion: 230 V → 12 V AC → bridge → filter → **LM7805** → **+5 V**.
+The measured output was **60 mV above nominal**. The relative deviation is `(5.06 − 5.00) / 5.00 × 100 = 1.2%`. This describes the recorded operating point. The archive contains no load sweep, ripple measurement or temperature log.
+
+The [hardware photo](docs/screenshots/14-hardware-breadboard-upright.png) shows the multimeter display and breadboard. The [measurement log](docs/measurement-log.md) records the reading alongside fields for future supervised lab observations.
 
 ---
 
@@ -380,7 +383,7 @@ Conclusion: 230 V → 12 V AC → bridge → filter → **LM7805** → **+5 V**.
 | Filter value | **470 nF** | Typical labs: hundreds of **µF** |
 | 7805 input min | 7 V | 7.2 V |
 
-**Rebuild rule:** apparatus list + hardware photos + **5.06 V** win.
+The apparatus list and photos document the prototype. Verify conflicting component specifications with the lab supervisor before using the presentation as a build reference.
 
 ---
 
@@ -404,7 +407,7 @@ Circuit-Analysis/
 
 ## How to use the archive
 
-1. Open [Live demo](#live-demo) links (full URLs — no “click here”).
+1. Open [Live Links](#live-links) links (full URLs — no “click here”).
 2. Walk [Feature screenshots (20)](#feature-screenshots-20).
 3. Read the PDF; zoom Proteus / hardware pages.
 4. Cross-check photos against [`docs/wiring-checklist.md`](docs/wiring-checklist.md).
@@ -434,4 +437,19 @@ The [`docs/`](docs/README.md) pack adds checklists and BOM structure **around** 
 **Mohammad Rohaan** · Roll **22I-2327**  
 Group: Taha Sajid Awan (22I-2302), Talha Tariq (22I-2309)  
 GitHub: https://github.com/rohaan2802  
-Repository: https://github.com/rohaan2802/Circuit-Analysis
+Repository: https://github.com/rohaan2802/Circuit_Analysis
+
+## Hardware Media
+
+Both recordings were captured on **5 December 2022**.
+
+| Recording | Description | File |
+|---|---|---|
+| Power-on and measurement | Primary breadboard demonstration and measurement recording | [Open MP4](video_20221205_163544.mp4) |
+| Second hardware recording | Another view of the breadboard prototype during the lab session | [Open MP4](video_20221205_163700.mp4) |
+
+The [website recordings section](https://rohaan2802.github.io/Circuit_Analysis/#recordings) provides playback controls for both clips. Each video starts loading when you press Play.
+
+**Hardware photos**
+- [Breadboard photo](IMG_20221205_163654.jpg)
+- [Second hardware angle](IMG-20221207-WA0006.jpeg)
