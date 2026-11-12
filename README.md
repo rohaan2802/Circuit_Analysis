@@ -21,9 +21,9 @@ Includes the graded **20-slide PDF**, breadboard photos, **two live videos**, **
 
 | What | Link |
 |---|---|
-| Website | [Open website](https://rohaan2802.github.io/Circuit_Analysis/) |
+| Website | [https://rohaan2802.github.io/Circuit_Analysis/](https://rohaan2802.github.io/Circuit_Analysis/) |
 | Repository | [https://github.com/rohaan2802/Circuit_Analysis](https://github.com/rohaan2802/Circuit_Analysis) |
-| Lab presentation | [Open lab presentation](https://github.com/rohaan2802/Circuit_Analysis/blob/main/5%20VOLT%20DC%20SUPPLY.pdf) |
+| Lab presentation | [https://github.com/rohaan2802/Circuit_Analysis/blob/main/5%20VOLT%20DC%20SUPPLY.pdf](https://github.com/rohaan2802/Circuit_Analysis/blob/main/5%20VOLT%20DC%20SUPPLY.pdf) |
 
 ---
 
